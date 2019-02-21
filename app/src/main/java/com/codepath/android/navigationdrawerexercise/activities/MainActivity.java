@@ -55,6 +55,10 @@ public class MainActivity extends AppCompatActivity {
         // We can now look up items within the header if needed
         ImageView ivHeaderPhoto = headerLayout.findViewById(R.id.ivHeader);
 
+        nvDrawer.getMenu().getItem(0).setChecked(true);
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.flContent, new SouthParkFragment()).commit();
+        setTitle(R.string.south_park);
     }
 
     private void setupDrawerContent(NavigationView navigationView) {
