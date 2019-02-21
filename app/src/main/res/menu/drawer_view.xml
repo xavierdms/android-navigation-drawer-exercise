@@ -5,7 +5,8 @@
         <item
             android:id="@+id/nav_first_fragment"
             android:icon="@drawable/ic_south_park"
-            android:title="@string/south_park" />
+            android:title="@string/south_park"
+            android:paddingTop="25dp"/>
         <item
             android:id="@+id/nav_second_fragment"
             android:icon="@drawable/ic_family_guy"
